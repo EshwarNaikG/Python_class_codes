@@ -65,9 +65,9 @@ f = open("D:\PYTHON FULL STACK WEB DEVELOPER\PYTHON CLASS BY APNA COLLEGE\Chapte
 
 
 
-with open("example.txt", "w") as f:
-    f.write("This file has been overwritten using 'with' syntax.\n")
-    f.write("Hi My name is Eshwar Naik G\n")
+# with open("example.txt", "w") as f:
+#     f.write("This file has been overwritten using 'with' syntax.\n")
+#     f.write("Hi My name is Eshwar Naik G\n")
 
 
 # with open("example.txt", "a") as f:
@@ -80,3 +80,23 @@ with open("example.txt", "w") as f:
 
 # import os
 # os.remove("example.txt")  # This will delete the file named example.txt
+
+
+class Bank_Account:
+	def __init__(self, account_number, account_holder, balance):
+		self.account_number = account_number
+		self.account_holder = account_holder
+		self.balance = balance
+	def deposit(self, amount):
+		self.balance += amount
+		print(f"Deposited: {amount}. New Balance: {self.balance}")
+	def withdra(self, amount):
+		if amount > self.balance:
+			print("Insufficient balance")
+		else:
+			self.balance -= amount
+			print(f"Withdra: {amount}, new balance: {self.balance}")
+	def account_info(self):
+		print(f"account number {self.account_number}, account holder name: {self.account_holder}, balance: {self.balance} ")
+bank_account1 = Bank_Account(1234567, "Eshwara Naik G", 100000)
+bank_account1.account_info()

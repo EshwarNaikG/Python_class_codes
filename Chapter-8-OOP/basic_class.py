@@ -66,6 +66,35 @@ car3.car_info()  # Output: Car Make: Ford, Model: Mustang, Year: 2021
 
 #--------------------------------------------------------------------------------------------
 
+class Bank_Acount:
+    def __init__(self, account_number, account_holder, balance=0):
+        self.account_number = account_number
+        self.account_holder = account_holder
+        self.balance = balance
+    def deposit(self, amount):
+        self.balance += amount
+        print(f"Deposited: {amount}. New Balance: {self.balance}")
+    def withdraw(self, amount):
+        if amount > self.balance:
+            print("Insufficient funds")
+        else:
+            self.balance -= amount
+            print(f"Withdrew: {amount}. New Balance: {self.balance}")
+    def account_info(self):
+        print(f"Account Number: {self.account_number}, Account Holder: {self.account_holder}, Balance: {self.balance}")
 
-    
 
+bank_account1 = Bank_Acount("123456789", "Eshwar Naik G", 1000)
+bank_account1.account_info()  # Output: Account Number: 123456789, Account Holder: Eshwar Naik G, Balance: 1000
+bank_account1.deposit(500)    # Output: Deposited: 500. New Balance: 1500
+bank_account1.withdraw(200)   # Output: Withdrew: 200. New Balance: 1300
+bank_account1.withdraw(2000)  # Output: Insufficient funds  
+
+
+bank_account2 = Bank_Acount("987654321", "Adithya", 2000)
+bank_account2.account_info()  # Output: Account Number: 987654321, Account Holder: Adithya, Balance: 2000
+bank_account2.deposit(1000)   # Output: Deposited: 1000. New Balance: 3000
+bank_account2.withdraw(500)    # Output: Withdrew: 500. New Balance: 2500
+bank_account2.withdraw(4000)  # Output: Insufficient funds
+
+#--------------------------------------------------------------------------------------------
