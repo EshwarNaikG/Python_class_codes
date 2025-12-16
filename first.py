@@ -36,5 +36,11 @@
 # calculator()
 
 
-name = input('what is your name : ')
-print('my name is ', name)
+# name = input('what is your name : ')
+# print('my name is ', name)
+
+
+s = "hello world"
+words = s. split ()
+result = " ".join(word[::-1] for word in words)
+print(f"hello world : {result}")
