@@ -18,3 +18,4 @@ print(student1.fullname)
 # what is self parameter in python ?
 """ The self parameter is a reference to the current instance of the class,
 and it is used to access variables that belongs to the class"""
+
