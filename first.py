@@ -40,7 +40,19 @@
 # print('my name is ', name)
 
 
-s = "hello world"
-words = s. split ()
-result = " ".join(word[::-1] for word in words)
-print(f"hello world : {result}")
+# s = "hello world"
+# words = s. split ()
+# result = " ".join(word[::-1] for word in words)
+# print(f"hello world : {result}")
+
+num = int(input("Enter a number : "))
+
+for i in range(1,11):
+    print(i * num)
+
+
+
+n =  int(input("Enter a number : "))
+while i <=10 :
+    print(n*i)
+    i +=1
