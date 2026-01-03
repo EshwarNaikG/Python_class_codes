@@ -1,6 +1,8 @@
 # What is python ?
 """Python is a high-level, interpreted, object-oriented programming language known for simplicity and
-readability."""
+readability.
+=> Developed by Guide van russam in 1991.
+"""
 
 # Features of Python
 """
