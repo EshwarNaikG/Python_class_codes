@@ -45,14 +45,54 @@
 # result = " ".join(word[::-1] for word in words)
 # print(f"hello world : {result}")
 
-num = int(input("Enter a number : "))
+# num = int(input("Enter a number : "))
 
-for i in range(1,11):
-    print(i * num)
+# for i in range(1,11):
+#     print(i * num)
 
 
 
-n =  int(input("Enter a number : "))
-while i <=10 :
-    print(n*i)
-    i +=1
+# n =  int(input("Enter a number : "))
+# while i <=10 :
+#     print(n*i)
+#     i +=1
+
+#-----------------------------------
+# Finding ODD numbers
+# for i in range(1, 100):
+#     if(i%2 ==1):
+#         print(i)
+
+#-----------------------------------------
+# Finding Even Numbers
+# for i in range(1, 100):
+#     if(i%2 ==0):
+#         print(i)
+#--------------------------------------
+
+# Calculator
+
+n1 = float(input("Enter first numer : "))
+n2 = float(input("Enter second numer : "))
+operation = input("Enter your operator: (+, -, *, /, **, //)")
+
+if (operation == "+"):
+    print(n1+n2)
+
+elif(operation == "-"):
+    print(n1-n2)
+
+elif(operation == "*"):
+    print(n1*n2)
+
+elif(operation == "/"):
+    print(n1/n2)
+
+elif(operation == "**"):
+    print(n1**n2)
+
+elif(operation == "//"):
+    print(n1//n2)
+
+else:
+    print("You are selected invalid operators")
