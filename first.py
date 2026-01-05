@@ -72,27 +72,52 @@
 
 # Calculator
 
-n1 = float(input("Enter first numer : "))
-n2 = float(input("Enter second numer : "))
-operation = input("Enter your operator: (+, -, *, /, **, //)")
+# n1 = float(input("Enter first numer : "))
+# n2 = float(input("Enter second numer : "))
+# operation = input("Enter your operator: (+, -, *, /, **, //)")
 
-if (operation == "+"):
-    print(n1+n2)
+# if (operation == "+"):
+#     print(n1+n2)
 
-elif(operation == "-"):
-    print(n1-n2)
+# elif(operation == "-"):
+#     print(n1-n2)
 
-elif(operation == "*"):
-    print(n1*n2)
+# elif(operation == "*"):
+#     print(n1*n2)
 
-elif(operation == "/"):
-    print(n1/n2)
+# elif(operation == "/"):
+#     print(n1/n2)
 
-elif(operation == "**"):
-    print(n1**n2)
+# elif(operation == "**"):
+#     print(n1**n2)
 
-elif(operation == "//"):
-    print(n1//n2)
+# elif(operation == "//"):
+#     print(n1//n2)
 
-else:
-    print("You are selected invalid operators")
+# else:
+#     print("You are selected invalid operators")
+
+
+#----------------------------------------------------------
+
+import calendar
+year = int(input("Enter yaer : "))
+month = int(input("Enter month : "))
+
+cal = calendar.month(year, month)
+print(cal)
+
+# Output :
+"""
+Enter yaer : 2026
+Enter month : 1
+    January 2026
+Mo Tu We Th Fr Sa Su
+          1  2  3  4
+ 5  6  7  8  9 10 11
+12 13 14 15 16 17 18
+19 20 21 22 23 24 25
+26 27 28 29 30 31
+"""
+
+#-------------------------------------------
