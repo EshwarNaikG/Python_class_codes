@@ -30,3 +30,33 @@ print(f"My name is {Name} and I'm {age} years old")
 
 a = None
 print(type(a))   # <class 'NoneType'>
+
+
+# Integer
+a = 10  
+print(a)
+print(type(a))
+
+#-----------------------
+# Float
+b = 45.67
+print(b)
+print(type(b))
+
+#-------------------------
+# String
+c = "Hello! World"
+print(c)
+print(type(c))
+
+#--------------------------
+# Boolean
+d = True
+print(d)
+print(type(d))
+
+#---------------------------
+
+e = None
+print(e)
+print(type(e))
