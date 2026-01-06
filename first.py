@@ -121,3 +121,7 @@ Mo Tu We Th Fr Sa Su
 """
 
 #-------------------------------------------
+import decimal
+a = 10
+print(decimal.Decimal(a))
+print(type(decimal.Decimal(a)))    # <class 'decimal.Decimal'>

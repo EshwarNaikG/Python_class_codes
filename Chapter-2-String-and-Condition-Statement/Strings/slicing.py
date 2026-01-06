@@ -3,7 +3,7 @@
 
 """OR"""
 
-"""Slicing is accessing a parts a string."""
+"""Slicing is accessing parts a string using start, end, and step values."""
 
 # Difference: Indexing vs Slicing
 """
@@ -46,3 +46,25 @@ print(text[::-1])  # nohtyP (reverse string)
 # REVERSE STRING : IMPORTANT
 name = "Eshwara Naik G"
 print(name[::-1])
+
+#--------------------------------------
+str = "Apna College"
+print(str[0:len(str)])
+print(str[5:len(str)])
+
+print(str[:4])
+print(str[5:])
+
+#-----------------------------------
+#string[start : end : step]
+Name = "Eshwara Naik G"
+print(Name)
+print(Name[0::2])
+
+#---------------------------------------
+
+# Nagative Index:
+fruit = "APPLE"
+print(fruit[-5:-1])
+
+
