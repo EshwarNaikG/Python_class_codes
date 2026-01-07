@@ -100,12 +100,12 @@
 
 #----------------------------------------------------------
 
-import calendar
-year = int(input("Enter yaer : "))
-month = int(input("Enter month : "))
+# import calendar
+# year = int(input("Enter yaer : "))
+# month = int(input("Enter month : "))
 
-cal = calendar.month(year, month)
-print(cal)
+# cal = calendar.month(year, month)
+# print(cal)
 
 # Output :
 """
@@ -121,7 +121,18 @@ Mo Tu We Th Fr Sa Su
 """
 
 #-------------------------------------------
-import decimal
-a = 10
-print(decimal.Decimal(a))
-print(type(decimal.Decimal(a)))    # <class 'decimal.Decimal'>
+# import decimal
+# a = 10
+# print(decimal.Decimal(a))
+# print(type(decimal.Decimal(a)))    # <class 'decimal.Decimal'>
+
+
+#------------------------------------------------
+# Reverse a String using slice
+a ="Eshwar"
+print(a[::-1])
+
+#------------------------------------------------------
+# Reverse a list using slice
+a = [1,2,3,4]
+print(a[::-1])
