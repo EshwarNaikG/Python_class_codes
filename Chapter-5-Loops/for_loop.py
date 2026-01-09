@@ -1,7 +1,7 @@
 # what is for loop in python?
-
-
-
+"""
+A for loop in Python is used to iterate over a sequence and execute a block of code for each element.
+"""
 
 # Example of for loop in python
 fruits = ["apple", "banana", "cherry"]
