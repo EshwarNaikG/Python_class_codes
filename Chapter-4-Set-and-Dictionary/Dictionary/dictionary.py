@@ -2,7 +2,7 @@
 """Dictionaries are used to store data values in key:value pairs.
 They are unordered, mutable(changeble) and don't allow duplicate keys."""
 
-# Example
+# Example-1
 dict = {
     "name" : "Eshwar",
     "age": 32,
@@ -13,3 +13,18 @@ dict = {
 }
 
 print(dict)
+
+
+# Example-2
+karnataka_food = {
+    "Davanagere"  : "Benne Dose",
+    "Mysore" : "Mysore Pak",
+    "Bangalore" : "Bisibele Bath",
+    "Mandya" : "Ragi mudde"
+}
+
+print(karnataka_food)
+
+karnataka_food["shivamogga"] = "Palav"  # add items
+print(karnataka_food)
+
