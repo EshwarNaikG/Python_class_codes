@@ -36,11 +36,14 @@ print(str4)
 #--------------------------------------------
 # STRING LENGTH FINDING :
 
-a = "This is python class by apna college"
+# len() Function :
+a = "This is python class by apna college"   # spaces also consider in length
 len1 = print(len(a))
 
 b = "Eshwar"
 len2 = print(len(b))
+
+#----------------------------------------------------------
 
 
 

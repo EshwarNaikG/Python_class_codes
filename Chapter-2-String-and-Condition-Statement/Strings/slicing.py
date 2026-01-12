@@ -65,6 +65,6 @@ print(Name[0::2])
 
 # Nagative Index:
 fruit = "APPLE"
-print(fruit[-5:-1])
+print(fruit[-5:-2])
 
 
