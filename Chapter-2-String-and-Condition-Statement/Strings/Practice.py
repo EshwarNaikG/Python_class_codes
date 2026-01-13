@@ -8,3 +8,16 @@ print(f"length of name is: {len(str)}")
 str1 = "Hi my $nmae i$ $Eshwar prce $1999"
 
 print(str1.count("$"))
+
+#---------------------------------------
+
+# what is lstrip() ?
+"""lstrip() Removes characters from the left side only"""
+a = "abcpython"
+print(a.lstrip("abc"))  # lstrip() Removes characters from the left side only
+
+#----------------------------------------
+
+# what is rstrip() ?
+text = "Eshwar Naik"
+print(text.rstrip("Naik"))
