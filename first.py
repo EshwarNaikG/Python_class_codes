@@ -136,3 +136,13 @@ print(a[::-1])
 # Reverse a list using slice
 a = [1,2,3,4]
 print(a[::-1])
+
+
+#----------------------------------------------------------
+# identity
+a = 10
+b = 10
+c = 10
+print(id(a)) # memory location : same because value is same 
+print(id(b)) # memory location : same because value is same 
+print(id(c)) # memory location : same because value is same 
