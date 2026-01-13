@@ -29,8 +29,9 @@ set1 = {1, 1, 2, 2, 3, 3, 4, 4}
 print(set1)   # Set do not allow duplicate values.
 
 #-----------
-collection = {1, 2, 3, 3, "eshwar", "eshwar", "hello", "hello", "world", "world"}
+collection = {1, 2, 3, 3, "eshwar", "eshwar", "hello", "hello", "world", "world" ,4, 5}
 print(collection)
+print(len(collection))  # Total number of items. Dupliates are not allowed
 
 #------------------------------------------------------------------------
 # Common Set Operations :
@@ -60,3 +61,17 @@ print(a - b)   # Difference : {1, 2}
 
 #--------------------------------------------------
 
+set1 = {1, 2, 3}
+set2 = {3, 4, 5}
+
+set3 = set1.union(set2)   # {1, 2, 3, 4, 5}
+print(set3)
+# OR
+print(set1.union(set2))  # {1, 2, 3, 4, 5}
+#--------------------------
+set3 = set1.intersection(set2) # {3}
+print(set3)
+# OR
+print(set1.intersection(set2)) # {3}
+
+#-----------------------------------------------------------------
