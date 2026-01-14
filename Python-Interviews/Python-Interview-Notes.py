@@ -79,6 +79,7 @@ import keyword
 print(keyword.kwlist)
 
 #------------------------------------------------------------------------------------------------
+
 # CHAPTER-2 : VARIABLES IN PYTHON
 
 # What is variable in python ?
@@ -96,7 +97,6 @@ print(keyword.kwlist)
 name = "Eshwar"
 print(name)
 print(type(name))
-
 
 # What is type() function ?
 """Type function converts one data type to another data type"""
