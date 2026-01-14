@@ -60,7 +60,11 @@ Comments are ignored by the interpreter and are only visible in the code.
 """Indentation defines code blocks. Python uses indentation instead of braces {}"""
 
 # What is type casting?
-"""Converting one data type into another data type."""
+"""Type casting is converting one data type into another data type."""
+# OR
+"""Type casting is the manual conversion of one data type into another data type
+ using Python’s built-in functions."""
+
 n1 = int(input("Enter first number : "))   # converting string into integer# 
 n2 = int(input("Enter second number : "))  # converting string into integer# 
 
@@ -73,3 +77,36 @@ n2 = int(input("Enter second number : "))  # converting string into integer#
 """Keywords are the reserved words in python."""
 import keyword
 print(keyword.kwlist)
+
+#------------------------------------------------------------------------------------------------
+# CHAPTER-2 : VARIABLES IN PYTHON
+
+# What is variable in python ?
+"""Variable is a container used to stored  different types of values"""
+# OR
+"""Variable is the the name of memory location where we stored differnt types values"""
+
+# What is global and local variable?
+"""
+1. Global variable is accessible everywhere
+2. local variable is accessible only inside a function or block.
+"""
+
+# Example 
+name = "Eshwar"
+print(name)
+print(type(name))
+
+
+# What is type() function ?
+"""Type function converts one data type to another data type"""
+
+#--------------------------------------------------------------------------------------------------
+# CHAPTER-3 : DATA TYPES IN PYTHON
+
+# What is data type in python ?
+"""Data type represents the different kinds of values that we stored on the variable"""
+
+# Why called python is a dynamically typed  language ?
+"""No need to specify the data type explicitly, 
+based on the values type python allocated automatically at the run time"""

@@ -1,4 +1,4 @@
-# What is type in python ?
+# What is data type in python ?
 """Data type represents the different kinds of values that we stored on the variable"""
 
 # Why called python is a dynamically typed  language ?

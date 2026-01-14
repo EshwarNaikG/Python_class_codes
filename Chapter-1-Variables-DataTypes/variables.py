@@ -1,4 +1,4 @@
-# What is variable i python ?
+# What is variable in python ?
 """Variable is a container used to stored  different types of values"""
 """OR"""
 """Variable is the the name of memory location where we stored differnt types values"""
