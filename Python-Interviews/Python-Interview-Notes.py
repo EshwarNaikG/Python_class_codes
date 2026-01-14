@@ -102,6 +102,7 @@ print(type(name))
 """Type function converts one data type to another data type"""
 
 #--------------------------------------------------------------------------------------------------
+
 # CHAPTER-3 : DATA TYPES IN PYTHON
 
 # What is data type in python ?
@@ -110,3 +111,67 @@ print(type(name))
 # Why called python is a dynamically typed  language ?
 """No need to specify the data type explicitly, 
 based on the values type python allocated automatically at the run time"""
+
+x = 10      # int
+z = 7.5     # float
+y = "Hi"    # str
+
+# Dtatypes 
+"""
+1. Int  
+2. Float
+3. Complex
+4. String
+5. Boolean
+6. None    ====>>> None represents the absence of a value.
+7. List
+8. Tuple
+9. Set
+10. Dictionary (dict)
+"""
+# What are the built-in data types in Python?
+"""
+Python has the following built-in data types:
+
+Numeric → int, float, complex
+
+Sequence → list, tuple, range
+
+Text → str
+
+Set → set, frozenset
+
+Mapping → dict
+
+Boolean → bool
+"""
+
+# What is the difference between mutable and immutable data types?
+"""
+|   Mutable       |   Immutable            |
+| --------------- | ---------------------- |
+| Can be changed  | Cannot be changed      |
+| list, set, dict | int, float, str, tuple |
+
+"""
+# Examples 
+# Mutable
+lst = [1, 2]
+lst.append(3)
+
+# Immutable
+s = "Hi"
+# s[0] = "h" ❌
+
+# What is an int data type?
+"""Used to store whole numbers."""
+x = 100
+
+# What is a float data type?
+"""Stores decimal values."""
+price = 99.99
+
+# What is a string (str)?
+"""A string is an immutable sequence of characters enclosed in single quotes, double quotes, 
+or triple quotes."""
+name = "Python"
