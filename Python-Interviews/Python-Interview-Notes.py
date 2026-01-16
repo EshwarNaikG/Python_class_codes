@@ -323,3 +323,173 @@ print(C > D or E < F)   # statement1 is True and statement2 True => Final ans is
 print(C < D or E > F)   # statement1 is False and statement2 False => Final ans is False
 
 
+#--------------------------------------------------------------------------------------------------------
+# CHAPTER-5 : STRINGS IN PYTHON
+
+# What is string in python ?
+"""A string is an immutable sequence of characters enclosed in single quotes, double quotes, 
+or triple quotes."""
+
+# OR
+"""A string is a sequence of characters enclosed in single quotes (' '), double quotes (" "), 
+or triple quotes (''' ''' / """ """)."""
+
+# Example 
+name = "Eshwar"
+
+# Key Interview Points to Remember
+"""
+1. Strings are immutable
+
+2. They are indexed
+
+3. Stored as Unicode
+
+4. Written using ' ', " ", or """ """
+"""
+
+# Are strings mutable or immutable in Python?
+"""Strings are immutable, because their values cannot be changed after creation."""
+# Example
+s = "hello"
+# s[0] = 'H' ❌ Error
+
+
+# How do you access characters in a string?
+"""Using indexing."""
+
+# Example
+s = "Python"
+print(s[0]) # P
+print(s[-1]) # n
+
+# What is string slicing?
+"""Slicing is used to extract a part of a string."""
+
+# Syntax
+""" string[start:end:step] """
+# Example
+s = "Python"
+print(s[1:4])
+
+# What is the difference between == and is for strings?
+"""
+1. == compares values
+
+2. is compares memory locations
+"""
+# Example
+a = "hi"
+b = "hi"
+print(a == b) # True
+print(a is b) # May be True or False
+
+# How do you find the length of a string?
+"""Using len() function."""
+
+# Example
+s = "Python"
+print(len(s))
+
+# What is string concatenation?
+"""Joining two or more strings using +."""
+
+# Example
+a = "Hello"
+b = "World"
+print(a + " " + b)
+
+# How do you repeat a string?
+"""Using * operator."""
+
+# Example
+s = "Hi"
+print(s * 3)
+
+# What are common string methods in Python?
+"""
+     Method	        Description
+    lower() 	    Converts to lowercase
+    upper()	        Converts to uppercase
+    strip()	        Removes spaces
+    replace()	    Replaces substring
+    split()	        Splits string
+    find()	        Finds substring
+"""
+
+# Difference between find() and index()?
+"""
+1. find() → returns -1 if not found
+
+2. index() → raises error if not found
+"""
+# Example
+s = "python"
+print(s.find('z')) # -1
+# print(s.index('z')) ❌ Error
+
+# What is split() method?
+"""Splits a string into a list."""
+
+# Example
+s = "Python is easy"
+print(s.split())
+
+
+# What is join() method?
+"""Joins elements of a list into a string."""
+
+# Example
+words = ['Python', 'is', 'easy']
+print(" ".join(words))
+
+# What is string formatting?
+"""Used to insert values into strings."""
+
+# Example
+# a) f-string (Recommended)
+name = "Eshwar"
+age = 22
+print(f"My name is {name} and age is {age}")
+
+# How do you reverse a string?
+s = "Python"
+print(s[::-1])
+
+# How do you check if a string is palindrome?
+s = "madam"
+print(s == s[::-1])
+
+# How do you count occurrences of a character?
+s = "banana"
+print(s.count('a'))
+
+# What is strip(), lstrip(), rstrip()?
+"""Removes spaces from string."""
+s = " hello "
+print(s.strip())
+print(s.lstrip())
+print(s.rstrip())
+
+# How to check string type (numeric, alpha)?
+s = "123"
+print(s.isdigit())
+print(s.isalpha())
+
+# What are escape characters?
+"""Special characters starting with \.
+Examples:
+
+\n → New line
+
+\t → Tab
+"""
+
+print("Hello\nWorld")
+
+# Is empty string allowed in Python?
+"""Yes"""
+
+# Example
+s = ""
+print(len(s))
