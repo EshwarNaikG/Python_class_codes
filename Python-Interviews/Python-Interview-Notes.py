@@ -217,8 +217,109 @@ print(sum)
 n1 = int(input("Enter first number : "))   # converting string into integer# 
 n2 = int(input("Enter second number : "))  # converting string into integer# 
 
+#---------------------------------------------------------------------------------------
+
+# CHAPTER-4 :  INPUT() FUNCTION IN PYTHON
+
 # What is the input() function in Python?
-"""In Python the input() function is used to take input from the user during program execution."""
+"""Input() function is used to take input from the user during program execution."""
 
 # Important Point
 """The input() function always returns a string, even if the user enters a number."""
+
+# Example
+name = input("Enter your name : ")
+age = input("Enter ypur age : ")
+
+n1 = int(input("Enter first number : "))   # converting string into integer# 
+n2 = int(input("Enter second number : "))  # converting string into integer# 
+
+
+#---------------------------------------------------------------------------------------------
+
+# CHAPTER-5 : OPERATORS IN PYTHON
+
+# What is operator in python ?
+"""An operator is a symbol that performs a certain operation between operands."""
+
+# Types of Operators
+"""
+1. Arithmetic Operators (+, -, *, /, %, **, //)
+2. Relational / Comparison Operators (==, !=, >, <, >=, <=)
+3. Assignment Operators (=, +=, -=, *=, /=, %=, **=)
+4. Logical Operators (and, or , not)
+"""
+# Arithmetic Operators
+
+# examples
+a = 7
+b = 2
+sum = a+b                 # Addition operator
+print(f" Addition : {sum}")
+
+print(f"Subtraction : {a-b}")    # Subtraction operator
+print(f"Multiplication {a*b}")   #Multiplication operator
+print(f"Division {a/b}")         # Division operator
+print(f"Exponention : {a**b}")   # Exponention operator
+print(f"Floor Division : {a//b}") # FloorDivision operator
+print(f"Remainder : {a % b}")     # Remainder
+
+#....................................
+# Relational / Comparision operator
+a = 50
+b = 20
+
+print(a == b)  # False
+print(a != b)
+print( a > b)  #True
+print(a < b)  # False
+print(a >= b) # True
+print(a <= b) # False
+
+#........................................
+# Assignment Operator
+num = 10
+print(num)
+
+num = num + 10
+num +=10
+print(num)
+
+num -= 10
+print(num)
+
+num *= 10
+print(num)
+
+num /= 3
+print(num)
+
+num %= 10
+print(num)
+
+num **= 2
+print(num)
+#.....................................
+# Logical Operators
+
+# NOT Operator
+a = 10
+b = 5
+print(not(a>b))  # False
+print(not(a<b))  # True
+
+# AND Operator
+C = 20
+D = 8
+E = 10
+F = 30
+
+print(C > D and E > F)  # statement1 is True and statement2 False => Final ans is False
+print(C > D and E < F)  # statement1 is True and statement2 True => Final ans is True
+
+# OR Operator
+print(C > D or E > F)   # statement1 is True and statement2 False => Final ans is True
+print(C > D or E < F)   # statement1 is True and statement2 True => Final ans is True
+print(C < D or E > F)   # statement1 is False and statement2 False => Final ans is False
+
+

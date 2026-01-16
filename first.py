@@ -146,3 +146,8 @@ c = 10
 print(id(a)) # memory location : same because value is same 
 print(id(b)) # memory location : same because value is same 
 print(id(c)) # memory location : same because value is same 
+
+N = 10
+N +=10
+
+print(N)
