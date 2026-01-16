@@ -87,19 +87,41 @@ print(keyword.kwlist)
 # OR
 """Variable is the the name of memory location where we stored differnt types values"""
 
-# What is global and local variable?
-"""
-1. Global variable is accessible everywhere
-2. local variable is accessible only inside a function or block.
-"""
-
 # Example 
 name = "Eshwar"
 print(name)
 print(type(name))
 
+# What is global and local variable?
+"""
+1. Global variable is accessible everywhere
+2. local variable is accessible only inside a function or block.
+"""
+# Example:- GLOBAL VARIABLE..............................
+x = 10   # global variable
+
+def show():
+    print(x)
+
+show()
+print(x)
+
+# Exmaple:- LOCAL VARIABLE...................................
+def display():
+    y = 20   # local variable
+    print(y)
+
+display()
+# print(y)  ❌ Error
+
+
 # What is type() function ?
-"""Type function converts one data type to another data type"""
+"""The type() function is used to find the data type of a variable or value."""
+
+# Example 
+name = "Eshwar"
+print(name)
+print(type(name))
 
 #--------------------------------------------------------------------------------------------------
 
@@ -174,4 +196,29 @@ price = 99.99
 # What is a string (str)?
 """A string is an immutable sequence of characters enclosed in single quotes, double quotes, 
 or triple quotes."""
+# Example
 name = "Python"
+
+# What is Type casting in Python ?
+"""Type casting is the manual conversion of one data type into another data type
+ using Python’s built-in functions."""
+
+# Examples
+
+a = 4   # int
+b = "7.8"  # str
+c = float(b)  # convert string into float
+sum = a + c
+print(sum)
+
+
+# Note:-  User input values always return in string.
+
+n1 = int(input("Enter first number : "))   # converting string into integer# 
+n2 = int(input("Enter second number : "))  # converting string into integer# 
+
+# What is the input() function in Python?
+"""In Python the input() function is used to take input from the user during program execution."""
+
+# Important Point
+"""The input() function always returns a string, even if the user enters a number."""
