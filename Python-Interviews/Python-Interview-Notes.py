@@ -324,6 +324,7 @@ print(C < D or E > F)   # statement1 is False and statement2 False => Final ans 
 
 
 #--------------------------------------------------------------------------------------------------------
+
 # CHAPTER-5 : STRINGS IN PYTHON
 
 # What is string in python ?
@@ -495,3 +496,188 @@ s = ""
 print(len(s))
 
 #----------------------------------------------------------------------------------------------------------
+
+# CHAPTER-6 : CONDITION STATEMENT IN PYTHON
+
+# What is conditional statement in Python ?
+""" Conditional statement  executes different code blocks 
+based on whether a given condition is True or False. """
+
+# if-elif-else (syntax)
+
+"""
+if (condition):
+    statement1
+
+elif (condition):
+    statement2
+
+else:
+    statement3
+"""
+
+# Why are conditional statements used?
+"""
+1. To control the flow of execution
+
+2. To perform decision-making
+
+3. To execute code only when a condition is satisfied
+"""
+
+# Types of Conditional Statements in Python
+# 1. if Statement
+"""Executes a block of code only if the condition is true."""
+
+# Example 
+age = 20
+if age >= 18:
+    print("Eligible to vote")
+
+# 📌 Interview Point:
+"""If the condition is false, the code inside if will not execute."""
+
+# 2. if-else Statement
+"""Executes one block if the condition is true, otherwise executes the else block."""
+
+# Example
+num = 5
+if num % 2 == 0:
+    print("Even number")
+else:
+    print("Odd number")
+
+# 📌 Interview Point:
+"""Ensures exactly one block is executed."""
+
+# if-elif-else Statement
+"""Used to check multiple conditions."""
+
+# Example
+marks = 85
+
+if marks >= 90:
+    print("Grade A")
+elif marks >= 75:
+    print("Grade B")
+elif marks >= 60:
+    print("Grade C")
+else:
+    print("Fail")
+
+# 📌 Interview Point:
+"""
+1. Conditions are checked top to bottom
+
+2. Only the first true condition is executed
+"""
+
+# Nested if
+"""An if statement inside another if. """
+
+# Example
+num = 10
+
+if num > 0:
+    if num % 2 == 0:
+        print("Positive Even Number")
+
+# 📌 Interview Point:
+"""Used when one condition depends on another."""
+
+# Conditional Operators Used
+"""
+| Operator | Meaning               |
+| -------- | --------------------- |
+| `==`     | Equal to              |
+| `!=`     | Not equal             |
+| `>`      | Greater than          |
+| `<`      | Less than             |
+| `>=`     | Greater than or equal |
+| `<=`     | Less than or equal    |
+
+"""
+
+# Logical Operators in Conditions
+"""
+| Operator | Description                            |
+| -------- | -------------------------------------- |
+| `and`    | True if both conditions are true       |
+| `or`     | True if at least one condition is true |
+| `not`    | Reverses the condition                 |
+
+"""
+
+# Example
+age = 25
+if age > 18 and age < 60:
+    print("Working age")
+
+# Q1. What is the difference between if and if-else?
+"""
+Answer:
+
+1. if executes code only when the condition is true.
+
+2. if-else provides an alternative block when the condition is false.
+"""
+
+# Q2. Can we write multiple else blocks?
+"""❌ No, only one else is allowed per if.
+But we can use multiple elif blocks.
+"""
+
+# Q3. What is the difference between elif and else?
+"""
+1. elif checks another condition
+
+2. else executes when none of the conditions are true
+"""
+
+# Q4. What happens if multiple conditions are true in if-elif-else?
+"""Only the first true condition is executed."""
+
+# Q5. Is indentation important in conditional statements?
+"""
+✅ Yes. Python uses indentation to define code blocks.
+Incorrect indentation causes an IndentationError.
+"""
+
+# Q6. Can conditional statements be used without comparison operators?
+"""Yes. Any boolean expression or variable can be used."""
+#Example
+is_logged_in = True
+if is_logged_in:
+    print("Welcome User")
+
+# Q7. What is a ternary conditional statement?
+"""A one-line conditional statement."""
+# Example
+result = "Pass" if marks >= 40 else "Fail"
+
+# 📌 Interview Tip:
+"""Also called conditional expression"""
+
+#🔹 Common Interview Programs...............................
+# ✔ Check largest of three numbers
+a, b, c = 10, 20, 15
+
+if a > b and a > c:
+    print("a is largest")
+elif b > c:
+    print("b is largest")
+else:
+    print("c is largest")
+
+# ✔ Check leap year
+year = 2024
+
+if year % 4 == 0 and year % 100 != 0 or year % 400 == 0:
+    print("Leap Year")
+else:
+    print("Not a Leap Year")
+
+#-------------------------------------------------------------------------------------------------------
+
+
+
