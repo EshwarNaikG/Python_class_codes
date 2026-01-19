@@ -679,5 +679,9 @@ else:
 
 #-------------------------------------------------------------------------------------------------------
 
+# CHAPTER-7 : LIST IN PYTHON
 
+# What is list in python ?
+"""List is a built-in data types in Python used to store multiple values in a single variable.
+Lists are ordered, mutable, and allow duplicate values."""
 
