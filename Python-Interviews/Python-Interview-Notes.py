@@ -1031,6 +1031,15 @@ index = my_list.index(20)  # 1
 
 # 🐍 Python List – Interview Questions & Answers.....................................................
 
+# 🔹 1. What is a list in Python?
+"""A list is a built-in data type in Python used to store multiple values in a single variable.
+Lists are ordered, mutable, and allow duplicate values."""
 
+a = [10, 20, "Python", 3.5]
 
+# 🔹 2. Is a list mutable or immutable?
+"""Lists are mutable, meaning their elements can be changed after creation."""
+my_list = [1, 2, 3]
+my_list[0] = 10  # Modifying the first element
+print(my_list)  # Output: [10, 2, 3]
 
