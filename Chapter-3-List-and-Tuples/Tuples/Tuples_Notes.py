@@ -253,4 +253,5 @@ print(dir(my_tuple))   # Tuple methods
 # OR
 """ Tuples uses for fixed collections of items that should not change throughout the program."""
 
-
+# Q: Why tuple is faster than list?
+"""👉 Because tuples are immutable and have a fixed memory allocation."""
