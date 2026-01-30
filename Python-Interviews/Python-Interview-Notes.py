@@ -1179,3 +1179,367 @@ for item in my_list:
 """If you try to access an index that is out of range, Python raises an IndexError."""
 my_list = [1, 2, 3]
 # print(my_list[5])  # IndexError: list index out of range
+
+
+
+#----------------------------------------------------------------------------------------------------
+# CHAPTER-8 : TUPLE IN PYTHON
+# 1. What is tuple in python ?
+"""Tuple is a built-in data types in Python used to store multiple values in a single variable
+Tuples are ordered, immutable, and allow duplicate values."""
+
+# OR
+""" Tuple is a collection of items that is ordered, immutable and allows dublicates elements.
+tuple can store multiple data typpes."""
+
+# Example
+my_tuple = (1, 2, 3, 'Python',("Eshwar", "Adithya", "Rekha"))
+print(my_tuple)
+
+# 2. How is a tuple different from a list?
+"""
+| Feature     | Tuple      | List         |
+| ----------- | ---------- | ------------ |
+| Mutability  | Immutable  | Mutable      |
+| Syntax      | `()`       | `[]`         |
+| Performance | Faster     | Slower       |
+| Use case    | Fixed data | Dynamic data |
+"""
+
+# 3. How do you create a tuple?
+"""Using parentheses () with comma-separated values."""
+# Example
+t1 = (10, 20, 30)
+t2 = 10, 20, 30   # without parentheses
+t3 = tuple((40, 50, 60))  # Using tuple() constructor
+print(t1)
+print(t2)
+print(t3)
+
+# 4. Can a tuple store different data types?
+"""Yes, tuples can store different data types."""
+mixed_tuple = (1, "hello", 3.5, True)
+
+# 5. What is indexing in a tuple?
+"""Accessing elements using index values (starting from 0)."""
+colors = ("red", "green", "blue")
+print(colors[1])  # Output: green
+
+# 6. What is negative indexing?
+"""Accessing elements from the end of the tuple using negative index values (-1 for last element)."""
+a = (10, 20, 30)
+print(a[-1])   # 30
+print(a[-2])   # 20
+
+# 7. What is slicing in a tuple?
+"""Extracting a portion of the tuple using slicing syntax: tuple[start:end:step]"""
+numbers = (1, 2, 3, 4, 5)
+print(numbers[1:4])   # (2, 3, 4)
+print(numbers[:3])    # (1, 2, 3)
+print(numbers[::2])   # (1, 3, 5)
+print(numbers[-3:])   # (3, 4, 5)
+
+# 8. Is a tuple mutable or immutable?
+"""Tuples are immutable, meaning their elements cannot be changed after creation."""
+# Example
+my_tuple = (1, 2, 3)
+# my_tuple[0] = 10  # This would raise a TypeError because tuples are immutable
+
+# 9. How do you find the length of a tuple?
+"""Using len() function."""
+my_tuple = (1, 2, 3, 4, 5)   
+print(len(my_tuple))  # Output: 5
+
+# 10. How to check if an element exists in a tuple?
+"""Using the 'in' keyword."""
+my_tuple = (1, 2, 3, 4, 5)
+print(3 in my_tuple)   # Output: True
+print(6 in my_tuple)   # Output: False
+
+# 11. How to convert a list to a tuple?
+"""Using tuple() constructor."""
+my_list = [1, 2, 3]
+my_tuple = tuple(my_list)
+print(my_tuple)  # Output: (1, 2, 3)
+
+# 12. How to convert a tuple to a list?
+"""Using list() constructor."""
+my_tuple = (1, 2, 3)
+my_list = list(my_tuple)
+print(my_list)  # Output: [1, 2, 3]
+
+# 13. Can tuples be nested?
+"""Yes, tuples can contain other tuples as elements."""
+nested_tuple = ((1, 2), (3, 4), (5, 6))
+print(nested_tuple)  # Output: ((1, 2), (3, 4), (5, 6))
+
+# 14. How to iterate through a tuple?
+"""Using a for loop."""
+my_tuple = (1, 2, 3, 4)
+for item in my_tuple:
+    print(item)
+
+# 15. What happens if you try to access an index that is out of range?
+"""If you try to access an index that is out of range, Python raises an IndexError."""
+my_tuple = (1, 2, 3)
+# print(my_tuple[5])  # IndexError: tuple index out of range
+
+# 16. What is tuple unpacking?
+"""Assigning elements of a tuple to multiple variables in a single statement."""
+my_tuple = (10, 20, 30)
+a, b, c = my_tuple
+print(a)  # Output: 10
+print(b)  # Output: 20
+print(c)  # Output: 30
+
+# 17. How to create a single-element tuple?
+"""By adding a comma after the single element."""
+single_element_tuple = (10,)
+print(single_element_tuple)  # Output: (10,)
+
+# 18. What are some common tuple methods?
+"""Tuples have only two built-in methods: count() and index().
+
+count() - Returns the number of occurrences of a value.
+index() - Returns the index of the first occurrence of a value.
+"""
+my_tuple = (1, 2, 3, 2, 4)
+print(my_tuple.count(2))  # Output: 2
+print(my_tuple.index(3))  # Output: 2
+
+# 19. How is a tuple different from a list?
+"""
+| Feature     | Tuple      | List         |
+
+| ----------- | ---------- | ------------ |
+| Mutability  | Immutable  | Mutable      |
+| Syntax      | `()`       | `[]`         |
+| Performance | Faster     | Slower       |
+| Use case    | Fixed data | Dynamic data |
+"""
+
+# 20. When to use a tuple over a list?
+"""Use a tuple when you need an immutable collection of items,
+or when you want to ensure the data cannot be modified."""
+# Example
+coordinates = (10.0, 20.0)  # Using tuple for fixed coordinates
+print(coordinates)
+
+# 🟡 Intermediate Tuple Interview Questions
+
+# 21. How do you access tuple elements?
+"""Using indexing and slicing."""
+my_tuple = (10, 20, 30, 40, 50)
+print(my_tuple[2])    # Output: 30
+print(my_tuple[1:4])  # Output: (20, 30, 40)
+
+# 22. Can you change a tuple after it is created?
+"""No, tuples are immutable and cannot be changed after creation."""
+my_tuple = (1, 2, 3)
+# my_tuple[0] = 10  # This would raise a TypeError
+
+# 23. How to concatenate two tuples?
+"""Using the + operator."""
+tuple1 = (1, 2, 3)
+tuple2 = (4, 5, 6)
+combined_tuple = tuple1 + tuple2
+print(combined_tuple)  # Output: (1, 2, 3, 4, 5, 6)
+
+# 24. How to repeat a tuple?
+"""Using the * operator."""
+my_tuple = (1, 2, 3)
+repeated_tuple = my_tuple * 3
+print(repeated_tuple)  # Output: (1, 2, 3, 1, 2, 3, 1, 2, 3)    
+
+# 25. How to find the maximum and minimum values in a tuple?
+"""Using max() and min() functions."""
+my_tuple = (10, 20, 5, 30)
+print(max(my_tuple))  # Output: 30
+print(min(my_tuple))  # Output: 5
+
+# 26. What happens if you try to modify a tuple?
+"""If you try to modify a tuple, Python raises a TypeError because tuples are immutable."""
+#OR
+"""It raises a TypeError."""
+
+t = (1, 2, 3)
+t[0] = 5   # Error
+
+my_tuple = (1, 2, 3)
+# my_tuple[0] = 10  # This would raise a TypeError: 'tuple' object does not support item assignment
+
+# 27. How do you loop through a tuple?
+"""Using a for loop."""
+# Example
+my_tuple = (1, 2, 3, 4)
+for item in my_tuple:
+    print(item)
+
+#Example
+t = (1, 2, 3)
+for i in t:
+    print(i)
+
+
+# 28. Can tuples contain mutable elements?
+"""Yes, tuples can contain mutable elements like lists."""
+my_tuple = (1, 2, [3, 4])
+my_tuple[2][0] = 30  # Modifying the list inside the tuple
+print(my_tuple)  # Output: (1, 2, [30, 4])
+
+# 29. How to convert a string to a tuple?
+"""Using tuple() constructor."""
+my_string = "hello"
+my_tuple = tuple(my_string)
+print(my_tuple)  # Output: ('h', 'e', 'l', 'l', 'o')
+
+# 30. How to convert a tuple to a string?
+"""Using ''.join() method."""
+my_tuple = ('h', 'e', 'l', 'l', 'o')
+my_string = ''.join(my_tuple)
+print(my_string)  # Output: hello   
+
+
+# 🔵 Advanced Tuple Interview Questions..................................
+
+# 31. How to unpack a tuple into variables?
+"""By assigning the tuple to multiple variables."""
+my_tuple = (10, 20, 30)
+a, b, c = my_tuple
+print(a)  # Output: 10
+print(b)  # Output: 20
+print(c)  # Output: 30
+
+# 32. What are tuple packing and unpacking?
+"""Tuple packing is the process of assigning multiple values to a single tuple variable.
+Tuple unpacking is the process of assigning the elements of a tuple to multiple variables.
+"""
+# Packing
+t = 1, 2, 3
+
+# Unpacking
+a, b, c = t
+print(a)  # Output: 1
+print(b)  # Output: 2
+print(c)  # Output: 3
+
+# 33. How to slice a tuple?
+"""Using the slicing syntax: tuple[start:end:step]"""
+my_tuple = (10, 20, 30, 40, 50)
+print(my_tuple[1:4])  # Output: (20, 30, 40)
+print(my_tuple[:3])   # Output: (10, 20, 30)
+print(my_tuple[::2])  # Output: (10, 30, 50)
+
+# 34. Can you add elements to a tuple?
+"""No, tuples are immutable and do not support adding elements directly."""
+# However, you can create a new tuple by concatenation.
+my_tuple = (1, 2, 3)
+new_tuple = my_tuple + (4, 5)
+print(new_tuple)  # Output: (1, 2, 3, 4, 5)
+
+# 35. How to delete a tuple?
+"""We cannot delete individual elements from a tuple,
+ but we can delete the entire tuple using del statement."""
+my_tuple = (1, 2, 3)
+del my_tuple
+# print(my_tuple)  # This would raise a NameError because the tuple is deleted
+
+# 36. How to find the index of an element in a tuple?
+"""Using index() method."""
+my_tuple = (10, 20, 30, 20)
+index = my_tuple.index(20)
+print(index)  # Output: 1
+
+# 37. How to count occurrences of an element in a tuple?
+"""Using count() method."""
+my_tuple = (1, 2, 2, 3, 2)
+count = my_tuple.count(2)
+print(count)  # Output: 3
+
+# 38. How to create an empty tuple?
+"""Using empty parentheses ()."""
+empty_tuple = ()
+print(empty_tuple)  # Output: ()
+
+# 39. What built-in methods are available for tuples?
+"""
+Tuples support only two methods:
+1. count() 
+2. index()
+"""
+t = (1, 2, 2, 3)
+print(t.count(2))   # 2
+print(t.index(3))   # 3
+
+# 40. Why are tuples faster than lists?
+"""Tuples are faster than lists because they are immutable and have a smaller memory footprint."""
+
+#OR
+"""
+Tuples are faster because:
+
+1. They are immutable
+
+2. Require less memory
+
+3. No dynamic resizing
+"""
+
+# 41. Can a tuple be used as a dictionary key?
+""""Yes, if it contains only immutable elements."""
+
+d = {(1, 2): "value"}
+print(d[(1, 2)])  # Output: value
+
+# 42. How to convert a tuple to a dictionary?
+"""Using dict() constructor with a list of key-value pairs."""
+my_tuple = (("a", 1), ("b", 2), ("c", 3))
+my_dict = dict(my_tuple)
+print(my_dict)  # Output: {'a': 1, 'b': 2, 'c': 3}
+
+# 43. How do you delete a tuple?
+"""You can delete the entire tuple using the del statement."""
+# OR
+"""We cannot delete individual elements, but we can delete the whole tuple using del statement."""
+my_tuple = (1, 2, 3)
+del my_tuple
+# print(my_tuple)  # This would raise a NameError because the tuple is deleted
+
+# 44. What is the difference between a tuple and a string?
+"""
+| Feature     | Tuple            | String          |
+| ----------- | ---------------- | --------------- |
+| Mutability  | Immutable        | Immutable       |
+| Data Type   | Collection       | Sequence of chars|
+| Use case    | Multiple values  | Text data       |
+"""
+
+# 45. What is the use of parentheses in a tuple?
+"""Parentheses are used to define a tuple and group elements together."""
+my_tuple = (1, 2, 3)
+print(my_tuple)  # Output: (1, 2, 3)
+
+# 46. What is the use of tuples in real applications?
+"""Tuples are used for:
+1. Storing fixed collections of items
+2. Returning multiple values from functions
+3. Using as dictionary keys
+4. Data integrity (immutable data)
+"""
+# OR
+"""
+1. Returning multiple values from functions
+2. Database records
+3. Fixed configuration data
+4. Dictionary keys
+"""
+
+
+
+
+
+
+
+
+
+
