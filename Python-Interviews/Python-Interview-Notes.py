@@ -1043,3 +1043,139 @@ my_list = [1, 2, 3]
 my_list[0] = 10  # Modifying the first element
 print(my_list)  # Output: [10, 2, 3]
 
+# 🔹 3. How do you create a list in Python?
+"""Using square brackets [] with comma-separated values."""
+fruits = ["apple", "banana", "cherry"]
+
+# 🔹 4. Can a list store different data types?
+"""Yes, lists can store different data types."""
+mixed_list = [1, "hello", 3.5, True]
+
+#🔹 5. What is indexing in a list?
+"""Accessing elements using index values (starting from 0)."""
+colors = ["red", "green", "blue"]
+print(colors[1])  # Output: green
+
+#🔹 6. What is negative indexing?
+"""Accessing elements from the end of the list using negative index values (-1 for last element)."""
+a = [10, 20, 30]
+print(a[-1])   # 30
+print(a[-2])   # 20
+print(a[-3])   # 10
+
+#🔹 7. What is slicing in a list?
+"""Extracting a portion of the list using slicing syntax: list[start:end:step]"""
+numbers = [1, 2, 3, 4, 5]
+print(numbers[1:4])   # [2, 3, 4]
+print(numbers[:3])    # [1, 2, 3]
+print(numbers[::2])   # [1, 3, 5]
+print(numbers[-3:])   # [3, 4, 5]
+
+#🔹 8. Difference between append() and extend()?
+"""
+1. append() → adds one element to the end of the list.
+2. extend() → adds multiple elements from an iterable to the end of the list."""
+# OR
+"""
+| append()            | extend()                |
+| ------------------- | ----------------------- |
+| Adds one element    | Adds multiple elements  |
+| Adds as single item | Adds items individually |
+"""
+my_list = [1, 2, 3]
+my_list.append(4)
+print(my_list)  # Output: [1, 2, 3, 4]
+
+my_list.extend([5, 6])
+print(my_list)  # Output: [1, 2, 3, 4, 5, 6]
+
+#🔹 9. Difference between remove() and pop()?
+"""
+1. remove() → removes the first occurrence of a specific value.
+2. pop() → removes and returns the element at a specific index (default is last).
+"""
+# OR
+"""
+| remove()               | pop()                     |
+| ---------------------- | ------------------------- |
+| Removes by value       | Removes by index          |
+| Removes first occurrence | Returns element at index  |
+"""
+my_list = [10, 20, 30, 20]
+my_list.remove(20)
+print(my_list)  # Output: [10, 30, 20]
+
+my_list = [10, 20, 30, 20]
+my_list.pop(1)
+print(my_list)  # Output: [10, 30, 20]
+
+# 🔹 10. What does clear() do?
+"""clear() removes all elements from the list, resulting in an empty list."""
+# OR
+"""Removes all elements from the list."""
+my_list = [1, 2, 3]
+my_list.clear()
+print(my_list)  # Output: []
+
+#🔹 11. How to find the length of a list?
+"""Using len() function."""
+my_list = [1, 2, 3, 4, 5]   
+print(len(my_list))  # Output: 5
+
+# 🔹 12. How do you sort a list?
+"""Using sort() method for in-place sorting or sorted() function to return a new sorted list."""
+my_list = [3, 1, 4, 2]
+my_list.sort()    # In-place sorting
+print(my_list)    # Output: [1, 2, 3, 4]
+
+my_list = [3, 1, 4, 2]
+sorted_list = sorted(my_list)  # Returns a new sorted list  
+print(sorted_list)  # Output: [1, 2, 3, 4]
+
+# 🔹 13. How do you reverse a list?
+"""Using reverse() method for in-place reversal or reversed() function to return a new reversed list."""
+my_list = [1, 2, 3, 4]
+my_list.reverse()    # In-place reversal
+print(my_list)       # Output: [4, 3, 2, 1]
+
+my_list = [1, 2, 3, 4]
+reversed_list = list(reversed(my_list))   # Returns a new reversed list
+print(reversed_list)   # Output: [4, 3, 2, 1]
+
+# 🔹 14. How to check if an element exists in a list?
+"""Using the 'in' keyword."""
+my_list = [1, 2, 3, 4]
+print(2 in my_list)   # Output: True
+print(5 in my_list)   # Output: False
+
+# 🔹 15. How to copy a list?
+"""Using slicing [:] or copy() method."""
+original_list = [1, 2, 3]
+copied_list = original_list[:]  # Using slicing
+print(copied_list)  # Output: [1, 2, 3]
+
+original_list = [1, 2, 3]
+copied_list = original_list.copy()  # Using copy() method
+print(copied_list)  # Output: [1, 2, 3]
+
+# 🔹 16. What is list comprehension?
+"""List comprehension is a concise way to create lists. 
+It allows you to generate a new list by applying an expression to each item in an existing iterable."""
+squares = [x**2 for x in range(10)]
+print(squares)  # Output: [0, 1, 4, 9, 16, 25, 36, 49, 64, 81]
+
+# 🔹 17. Can lists be nested?
+"""Yes, lists can contain other lists as elements."""
+nested_list = [[1, 2], [3, 4], [5, 6]]
+print(nested_list)  # Output: [[1, 2], [3, 4], [5, 6]]
+
+# 🔹 18. How to iterate through a list?
+"""Using a for loop."""
+my_list = [1, 2, 3, 4]
+for item in my_list:
+    print(item)
+
+# 🔹 19. What happens if you try to access an index that is out of range?
+"""If you try to access an index that is out of range, Python raises an IndexError."""
+my_list = [1, 2, 3]
+# print(my_list[5])  # IndexError: list index out of range
