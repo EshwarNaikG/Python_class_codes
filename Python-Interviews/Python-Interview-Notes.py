@@ -1183,7 +1183,9 @@ my_list = [1, 2, 3]
 
 
 #----------------------------------------------------------------------------------------------------
+
 # CHAPTER-8 : TUPLE IN PYTHON
+
 # 1. What is tuple in python ?
 """Tuple is a built-in data types in Python used to store multiple values in a single variable
 Tuples are ordered, immutable, and allow duplicate values."""
@@ -1534,8 +1536,30 @@ print(my_tuple)  # Output: (1, 2, 3)
 4. Dictionary keys
 """
 
+# 47. Tuple vs List — when should you use tuple?
+"""
+Use a tuple when:
+
+1. Data should not change
+
+2. Performance is important
+
+3. Data integrity is required
+"""
+
+# 48. Can tuples be nested within other tuples?
+"""Yes, tuples can contain other tuples as elements."""
+nested_tuple = ((1, 2), (3, 4), (5, 6))
+print(nested_tuple)  # Output: ((1, 2), (3, 4), (5, 6)) 
 
 
+#----------------------------------------------------------------------------------------------------
+# CHAPTER-9 : SET IN PYTHON
+
+# What is set in python ?
+"""A set is a collection of unique elements that is unordered, mutable (can be changed).
+Set do not allow duplicate values.
+"""
 
 
 
