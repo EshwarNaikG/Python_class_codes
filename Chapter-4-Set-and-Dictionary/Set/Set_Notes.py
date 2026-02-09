@@ -232,3 +232,26 @@ print(fruitsB.issuperset(fruitsA))  # True
 
 4. Comparing collections
 """
+
+#----------------------------------------------------------------------------------------------
+# 🔹 When to Use List Instead of Set?
+"""
+1. When order matters
+2. When you need duplicates
+3. When you need indexing/slicing
+4. When you need more built-in methods
+"""
+# Example-1
+my_list = [1, 2, 2, 3, 4]
+my_set = set(my_list)
+print(my_set)  # Output: {1, 2, 3, 4} - duplicates removed
+
+#---------------------------------------------------------------------------------
+# what is in operator in python?
+"""The in operator in Python is used to check if a value exists within an iterable
+ (like a list, set, tuple, or string). It returns True if the value is found and False otherwise."""
+
+# Example-1
+my_set = {1, 2, 3, 'Python', 'Eshwar'}
+print(2 in my_set)        # True
+print('Java' in my_set)   # False

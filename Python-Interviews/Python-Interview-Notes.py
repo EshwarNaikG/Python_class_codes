@@ -1557,9 +1557,40 @@ print(nested_tuple)  # Output: ((1, 2), (3, 4), (5, 6))
 # CHAPTER-9 : SET IN PYTHON
 
 # What is set in python ?
-"""A set is a collection of unique elements that is unordered, mutable (can be changed).
-Set do not allow duplicate values.
+"""A set is a collection of unique elements that is unordered, mutable (can be changed)
+and do not allow duplicate values.
 """
+#OR
+"""A set is an unordered, mutable collection of unique elements."""
+
+
+# ✅ Key Features of a Set
+"""
+✔ Stores only unique values (no duplicates)
+✔ Unordered (no indexing or slicing)
+✔ Mutable (you can add or remove elements)
+✔ Written using curly braces {} or set() function
+"""
+
+# Example
+my_set = {1, 2, 3, 'Python', {"Eshwar", "Adithya", "Rekha"}}
+print(my_set)
+
+# Example-2
+fruits = {"apple", "banana", "cherry", "apple"}  # Duplicate "apple" will be ignored
+print(fruits)  # Output: {'banana', 'cherry', 'apple'}
+
+# Example-3
+numbers = {1, 2, 3, 4, 5}
+print(numbers)
+print(type(numbers)) # <class 'set'>
+print(len(numbers))  # 5
+
+
+
+
+
+
 
 
 
