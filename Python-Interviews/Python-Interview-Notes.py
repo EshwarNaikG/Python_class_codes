@@ -1586,12 +1586,202 @@ print(numbers)
 print(type(numbers)) # <class 'set'>
 print(len(numbers))  # 5
 
+# 🔹 2. How to Create a Set?
+"""Using curly braces {} with comma-separated values or using set() constructor."""
+# Example-1
+# Method 1: Using curly braces
+my_set = {1, 2, 3, 'Python', {"Eshwar", "Adithya", "Rekha"}}
+print(my_set)
+
+# Example-2
+fruits = {"apple", "banana", "cherry"}
+print(fruits)
+
+# Example-3
+# Method 2: Using set() function
+numbers = set([1, 2, 3, 4, 5])
+print(numbers)
+
+# 🔹 3. Can a set store different data types?
+"""Yes, sets can store different data types."""
+mixed_set = {1, "hello", 3.5, True}
+print(mixed_set)  # Output: {1, 'hello', 3.5, True}
+
+# 🔹 4. Are sets ordered or unordered?
+"""Sets are unordered, meaning there is no index or order of elements in a set."""
+# Example
+my_set = {1, 2, 3}
+# print(my_set[0])  # This would raise an error because sets are unordered
+
+# 🔹 5. How to add elements to a set?
+"""Use the add() method to add a single element to a set."""
+my_set.add(4)
+print(my_set)  # Output: {1, 2, 3, 4}
+
+# 🔹 6. How to remove elements from a set?
+"""Use the remove() or discard() method."""
+my_set.remove(2)
+print(my_set)  # Output: {1, 3, 4}
+
+# 🔹 7. What is the difference between remove() and discard()?
+"""
+- remove(): Raises KeyError if element is not found
+- discard(): Does not raise an error if element is not found
+"""
+my_set.discard(5)  # No error even if element is not in the set
+print(my_set)  # Output: {1, 3, 4}
+
+# 🔹 8. How to find the length of a set?
+"""Use the len() function."""
+print(len(my_set))  # Output: 3
+
+# 🔹 9. How to check if an element exists in a set?
+"""Use the 'in' keyword to check if an element exists in a set."""
+s = {1, 2, 3, 4, 5}
+if 3 in s   :
+    print("3 is in the set")
+else:
+    print("3 is not in the set")
+
+# 🔹 10. How to clear a set?
+"""Use the clear() method to remove all elements from a set."""
+s = {1, 2, 3, 4, 5}
+s.clear()
+print(s)  # Output: set()   
+
+# 🔹 11. Can sets contain duplicate values?
+"""No, sets do not allow duplicate values. If you try to add a duplicate value, it will be ignored."""
+duplicate_set = {1, 2, 3, 3, 4}
+print(duplicate_set)  # Output: {1, 2, 3, 4}
+
+# 🔹 12. How to perform set operations like union, intersection, difference, and symmetric difference?
+"""Use the following methods:
+- union(): Returns a new set with all unique elements from both sets.
+- intersection(): Returns a new set with elements common to both sets.
+- difference(): Returns a new set with elements in the first set but not in the second.
+- symmetric_difference(): Returns a new set with elements in either set but not in both.
+"""
+setA = {1, 2, 3, 4}
+setB = {3, 4, 5, 6}
+print(setA.union(setB))              # Output: {1, 2, 3, 4, 5, 6}
+print(setA.intersection(setB))       # Output: {3, 4}
+print(setA.difference(setB))         # Output: {1, 2}
+print(setA.symmetric_difference(setB))  # Output: {1, 2, 5, 6}
+
+# 🔹 13. How to find the maximum and minimum values in a set?
+"""Use the max() and min() functions."""
+numbers = {1, 2, 3, 4, 5}
+print(max(numbers))  # Output: 5
+print(min(numbers))  # Output: 1
+
+# 🔹 14. Can sets be nested within other sets?
+"""No, sets cannot be nested within other sets because sets are mutable and not hashable. 
+However, you can have a set of frozensets (which are immutable)."""
+frozen_set = frozenset([1, 2, 3])
+nested_set = {frozen_set}
+print(nested_set)  # Output: {frozenset({1, 2, 3})}
+
+# 🔹 15. How to convert a list to a set?
+my_list = [1, 2, 3, 4, 5]
+my_set = set(my_list)
+print(my_set)  # Output: {1, 2, 3, 4, 5}
+
+# 🔹 16. How to convert a set to a list?
+my_list = list(my_set)
+print(my_list)  # Output: [1, 2, 3, 4, 5]   
+
+# 🔹 17. Can sets be used as dictionary keys?
+"""No, sets cannot be used as dictionary keys because sets are mutable and not hashable."""
+# Example
+# my_dict = {my_set: "value"}  # This would raise a TypeError
+
+# However, frozensets can be used as dictionary keys because they are immutable.
+frozen_set = frozenset([1, 2, 3])
+my_dict = {frozen_set: "value"}
+print(my_dict)  # Output: {frozenset({1, 2, 3}): 'value'}
+
+# 🔹 18. How to find the intersection of two sets?
+setA = {1, 2, 3, 4}
+setB = {3, 4, 5, 6}
+intersection = setA.intersection(setB)
+print(intersection)  # Output: {3, 4}
+
+# 19 ⚠️ Empty set:
+"""To create an empty set, using the set() constructor.
+Using {} will create an empty dictionary, not a set."""
+empty_set = set()
+print(empty_set)  # Output: set()
+
+# 🔹 20. Difference Between List and Set
+"""
+| Feature    | List      | Set           |
+| ---------- | --------- | ------------- |
+| Ordered    | ✅ Yes     | ❌ No          |
+| Duplicates | ✅ Allowed | ❌ Not Allowed |
+| Indexing   | ✅ Yes     | ❌ No          |
+| Mutable    | ✅ Yes     | ✅ Yes         |
+
+"""
+
+# 🔹 21. How to Add Elements?
+s = {1, 2}
+s.add(3)
+print(s) # Output: {1, 2, 3}
+
+# Add multiple elements:
+s.update([4, 5])
+print(s) # Output: {1, 2, 3, 4, 5}
+
+# 🔹 22. How to Remove Elements?
+s = {1, 2, 3, 4, 5}
+s.remove(2)   # Error if not found
+s.discard(10) # No error
+s.pop()       # Removes random element
+s.clear()     # Removes all elements
+
+# 🔹 23. Set Operations (Very Important)
+a = {1, 2, 3}
+b = {3, 4, 5}
+
+# Union
+print(a | b)  # Output: {1, 2, 3, 4, 5}
+
+# Intersection
+print(a & b)  # Output: {3}
+
+# Difference
+print(a - b)  # Output: {1, 2}
+
+# Symmetric Difference
+print(a ^ b)  # Output: {1, 2, 4, 5}
+
+#🔹 24. What is FrozenSet?
+"""
+1. Immutable version of set
+2. Cannot add/remove elements
+3. Can be used as dictionary keys
+4. Created using frozenset() function
+"""
+# OR
+"""1. Immutable set
+2. Cannot be modified after creation
+3. Can be used as dictionary keys
+4. Created using frozenset() function
+"""
+my_frozenset = frozenset([1, 2, 3]) 
+print(my_frozenset)  # Output: frozenset({1, 2, 3})
+
+# 🔹 25. Set Comprehension
+squared_set = {x**2 for x in range(10)}
+print(squared_set)  # Output: {0, 1, 4, 9, 16, 25, 36, 49, 64, 81}
 
 
+# 🔹 26. What Are Subset and Superset?
+a = {1, 2}
+b = {1, 2, 3}
 
-
-
-
+a.issubset(b)      # True
+b.issuperset(a)    # True
 
 
 
