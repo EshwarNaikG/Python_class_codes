@@ -161,3 +161,122 @@ print(squares)
 
 # CHAPTER-2 :- WHILE LOOP IN PYTHON
 
+# What is while loop in python ?
+''' 
+A while loop is a control flow statement  that repeatedly executes a block of code
+as long as a given condition is true.
+The while is used when the number of iterations is not known in advance.
+'''
+
+# OR
+
+"""
+The while loop executes a block of code as long as the condition is True.
+The while is used when the number of iterations is not known in advance.
+"""
+
+# 1️⃣ Basic Syntax
+"""
+while condition:
+    # code block
+
+"""
+# NOTE:- ✔ The loop runs repeatedly until the condition becomes False.
+
+# 2️⃣ Simple Example
+i = 1
+while i <= 5:
+    print(i)
+    i += 1
+
+# Output :- 1 2 3 4 5
+# 👉 Important: Always update the variable inside the loop.
+
+
+# 3️⃣ Infinite Loop
+"""If condition never becomes False, loop runs forever."""
+while True:
+    print("Hello")
+
+# ⚠ To stop infinite loop, use break.
+
+# 4️⃣ Using break
+"""Stops the loop immediately."""
+i = 1
+
+while i <= 5:
+    if i == 3:
+        break
+    print(i)
+    i += 1
+# Output :- 1 2
+
+# 5️⃣ Using continue
+"""Skips current iteration."""
+i = 0
+
+while i < 5:
+    i += 1
+    if i == 3:
+        continue
+    print(i)
+
+# Output :- 1 2 4 5
+
+# 6️⃣ Using pass
+"""Does nothing (placeholder)."""
+while False:
+    pass
+
+# 7️⃣ while with else
+"""The else block runs when loop finishes normally (not by break)."""
+i = 1
+
+while i <= 3:
+    print(i)
+    i += 1
+else:
+    print("Loop completed")
+
+# 8️⃣ Nested while Loop
+i = 1
+
+while i <= 3:
+    j = 1
+    while j <= 2:
+        print(i, j)
+        j += 1
+    i += 1
+
+# NOTE :- 
+"""Used in:
+
+Pattern programs
+
+Matrix problems"""
+
+# 9️⃣ Common Use Cases
+"""
+✅ User input validation
+✅ Menu-driven programs
+✅ Password checking
+✅ Guessing number games
+✅ Condition-based repetition
+"""
+# Example (User Input):
+password = ""
+
+while password != "admin123":
+    password = input("Enter password: ")
+
+# 🔟 Difference Between for and while
+"""
+| `for` loop                      | `while` loop              |
+| ------------------------------- | ------------------------- |
+| Used when iterations are known  | Used when condition-based |
+| Automatically handles iteration | Manual increment required |
+| Works on iterable               | Works on condition        |
+
+"""
+
+
