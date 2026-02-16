@@ -166,6 +166,7 @@ print(squares)
 ''' 
 A while loop is a control flow statement  that repeatedly executes a block of code
 as long as a given condition is true.
+
 The while is used when the number of iterations is not known in advance.
 '''
 
