@@ -49,3 +49,24 @@ a = [10, 20, 30]
 for i in a:
     print(i)
 #---------------------------------------------
+
+for i in range(3):
+    for j in range(2):
+        print(i, j)
+#------------------------------------------------
+
+names = ["A", "B", "C"]
+
+for index, value in enumerate(names):
+    print(index, value)
+
+#--------------------------------------------
+a = [1, 2, 3]
+b = ["A", "B", "C"]
+
+for x, y in zip(a, b):
+    print(x, y)
+
+#-------------------------------------------------
+for i in reversed(range(5)):
+    print(i)
