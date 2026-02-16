@@ -150,7 +150,7 @@ print(id(c)) # memory location : same because value is same
 N = 10
 N +=10
 
-print(N)
+# print(N)
 
 #---------------------------------------------------------------
 def add(a, b):

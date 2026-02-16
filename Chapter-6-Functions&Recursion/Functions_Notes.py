@@ -172,6 +172,56 @@ print(add.__doc__)
 6. Map, filter, reduce
 """
 
+#========================================================================================================
+# CHAPTER:- RECURSION
+# Python Recursion – Complete Notes
+
+# 📌 1. What is Recursion?
+"""Recursion is a technique where a function calls itself to solve smaller parts of a problem.
+Instead of using loops, recursion breaks a problem into:
+
+1. Base Case → Stops recursion
+2. Recursive Case → Function calls itself
+"""
+
+# 🧠 2. Basic Structure of Recursive Function
+"""
+def function_name(parameters):
+    if base_condition:
+        return value
+    else:
+        return function_name(smaller_problem)
+
+"""
+
+# 3. Example 1: Factorial Using Recursion
+"""Factorial Formula:"""
+def factorial(n):
+    if n == 0 or n == 1:   # Base case
+        return 1
+    else:
+        return n * factorial(n-1)  # Recursive call
+
+print(factorial(5))  # Output: 120
+
+# 🔍 How it Works:
+"""
+factorial(5)
+= 5 * factorial(4)
+= 5 * 4 * factorial(3)
+= 5 * 4 * 3 * factorial(2)
+= 5 * 4 * 3 * 2 * factorial(1)
+= 5 * 4 * 3 * 2 * 1
+= 120
+"""
+
+# 4. Example 2: Fibonacci Series
+"""
+Fibonacci Formula:
+F(n) = F(n-1) + F(n-2)
+
+"""
+
 
 
 
