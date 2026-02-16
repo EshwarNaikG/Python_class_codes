@@ -1,5 +1,5 @@
 # 1️⃣ What is a dictionary in Python?
-"""Dictionary is a built-in data type Python  used to store data in key : value pairs."""
+"""Dictionary is a built-in data type in Python  used to store data in key : value pairs."""
 
 # OR
 """Dictionary is a mutable, unordered collection of data that stores values in key : value pairs."""
