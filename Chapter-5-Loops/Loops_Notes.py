@@ -99,6 +99,13 @@ for i in range(5):
     print(i)
 # Output:- 0 1 2 4
 
+#-------------------------------------------------------------------------
+# 🔹 pass
+"""Placeholder (does nothing)."""
+for i in range(5):
+    pass
+
+
 #----------------------------------------------------------------------------------
 # 7. for Loop with else
 """The else block executes when loop finishes normally (no break)"""
