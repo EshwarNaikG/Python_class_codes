@@ -59,6 +59,8 @@ Comments are ignored by the interpreter and are only visible in the code.
 
 # What is indentation in Python?
 """Indentation defines code blocks. Python uses indentation instead of braces {}"""
+# OR 
+""" In python indentation is used to define blocks of code. Python uses indentation instead of {} braces """
 
 # What is type casting?
 """Type casting is converting one data type into another data type."""

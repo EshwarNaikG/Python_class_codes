@@ -10,3 +10,5 @@ elif (b > a) and (b > c):
 
 else:
     print(c, "is a greatest number")
+
+# Find greatest number from user input values
