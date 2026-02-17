@@ -1792,3 +1792,337 @@ b.issuperset(a)    # True
 
 
 # CHAPTER-10 : DICTIONARY IN PYTHON
+
+# 1️⃣ What is a dictionary in Python?
+"""A dictionary is a built-in data type used to store data in key–value pairs."""
+
+# OR
+"""Dictionary is a mutable, unordered collection of key-value pairs."""
+
+# Example-1
+student = {"name": "Eshwar", "age": 22}
+
+# Example-2
+student = {
+    "name": "Eshwar",
+    "age": 22,
+    "course": "Python"
+}
+
+"""
+✔ Keys must be unique
+✔ Keys must be immutable (string, int, tuple)
+✔ Values can be any data type
+"""
+
+# 2️⃣ How to create a dictionary?
+"""# Using curly braces {}"""
+
+# Method 1 :- Using {}
+d1 = {"a": 1, "b": 2}
+
+# Method 2 :- Using dict()
+d2 = dict(a=1, b=2)
+
+# Method 3
+d3 = dict([("a", 1), ("b", 2)])
+
+# 🔹 3. How to access values in a dictionary?
+d = {"name": "Eshwar", "age": 22}
+
+print(d["name"])      # Direct access
+print(d.get("age"))   # Safe access
+
+# Note:- 👉 get() prevents KeyError.
+
+# 🔹 4. Difference between get() and []?
+"""
+| `d["key"]`                   | `d.get("key")`                  |
+| ---------------------------- | ------------------------------- |
+| Raises KeyError if not found | Returns None (or default value) |
+"""
+
+print(d.get("salary", 0))  # Returns 0 if key not present
+
+
+# 🔹 5. How to add or update elements?
+d = {
+    "name" : "Eshwar",
+    "Age" : 30,
+}
+
+d["salary"] = 50000   # Add
+d["age"] = 23         # Update
+
+
+# 🔹 6. How to delete elements?
+
+del d["age"]      # Delete specific key
+d.pop("name")     # Remove and return value
+d.clear()         # Remove all items
+
+# 🔹 7. How to iterate over a dictionary?
+d = {
+    "name" : "Eshwar",
+    "Age" : 30,
+    "salary" : 50000,
+    "Job" : "Python Developer"
+}
+
+for key in d:
+    print(key)
+
+for value in d.values():
+    print(value)
+
+for key, value in d.items():
+    print(key, value)
+
+# 🔹 8. What are dictionary methods?
+# Common methods:
+d.keys()
+d.values()
+d.items()
+d.update()
+d.pop()
+d.popitem()
+d.clear()
+d.copy()
+
+# 🔹 9. What is dictionary comprehension?
+"""Used to create dictionary in one line."""
+
+squares = {x: x*x for x in range(5)}
+print(squares)
+
+# Output: {0:0, 1:1, 2:4, 3:9, 4:16}
+
+# 10. What is Nested Dictionary?
+"""Dictionary inside another dictionary."""
+# Example 
+students = {
+    "student1": {"name": "Eshwar", "age": 22},
+    "student2": {"name": "Ravi", "age": 23}
+}
+
+
+# 🔹 11. Can a dictionary have duplicate keys?
+"""
+❌ No.
+If duplicate keys are given, the last value overwrites the previous one.
+"""
+# Example-1
+d = {"a": 1, "a": 2}
+print(d)   # {'a': 2}
+
+
+# 🔹 12. Difference between Dictionary and List?
+"""
+| Dictionary      | List               |
+| --------------- | ------------------ |
+| Key-value pairs | Ordered collection |
+| Access by key   | Access by index    |
+| Uses {}         | Uses []            |
+
+"""
+
+# 🔹 13. What are immutable keys?
+#Valid keys:
+"string" # string
+123      # Numbers
+(1, 2)   # Tuple
+
+# Invalid keys:
+[1, 2]   # List (mutable)
+
+
+# 🔹 14. How to merge two dictionaries?
+d1 = {"a": 1}
+d2 = {"b": 2}
+
+d3 = {**d1, **d2}
+
+# OR
+d1.update(d2)
+
+# 🔹 15. How to check if key exists?
+if "name" in d:
+    print("Key exists")
+
+
+# 💡 Real Interview Coding Question
+# Reverse a Dictionary
+d = {"a":1, "b":2}
+reversed_dict = {v:k for k,v in d.items()}
+
+# 🔥 PART 1: Dictionary Coding Practice Problems :-
+
+# 🧠 1️⃣ Count Frequency of Characters in a String
+"""
+Input: "programming"
+Output: {'p':1, 'r':2, 'o':1, 'g':2, 'a':1, 'm':2, 'i':1, 'n':1}
+"""
+
+s = "programming"
+freq = {}
+
+for ch in s:
+    freq[ch] = freq.get(ch, 0) + 1
+
+print(freq)
+
+# 🧠 2️⃣ Count Frequency of Words in a Sentence
+sentence = "python is easy and python is powerful"
+words = sentence.split()
+
+count = {}
+for word in words:
+    count[word] = count.get(word, 0) + 1
+
+print(count)
+
+# 🧠 3️⃣ Find the Key with Maximum Value
+d = {"a":10, "b":25, "c":15}
+
+max_key = max(d, key=d.get)
+print(max_key)
+
+
+# 🧠 4️⃣ Merge Two Dictionaries
+d1 = {"a":1, "b":2}
+d2 = {"b":3, "c":4}
+
+merged = {**d1, **d2}
+print(merged)
+
+
+# 🧠 5️⃣ Reverse a Dictionary (Swap Key & Value)
+d = {"a":1, "b":2}
+
+reversed_dict = {v:k for k,v in d.items()}
+print(reversed_dict)
+
+# ⚠️ Note: Values must be unique.
+
+# 🧠 6️⃣ Remove Duplicate Values from Dictionary
+d = {"a":1, "b":2, "c":1, "d":3}
+
+unique = {}
+for k, v in d.items():
+    if v not in unique.values():
+        unique[k] = v
+
+print(unique)
+
+
+# 🧠 7️⃣ Sort Dictionary by Value
+d = {"a":3, "b":1, "c":2}
+
+sorted_dict = dict(sorted(d.items(), key=lambda x: x[1]))
+print(sorted_dict)
+
+# 🧠 8️⃣ Create Dictionary from Two Lists
+keys = ["name", "age", "course"]
+values = ["Eshwar", 22, "Python"]
+
+d = dict(zip(keys, values))
+print(d)
+
+
+# 🧠 9️⃣ Group Words by Length
+words = ["hi", "hello", "cat", "dog", "python"]
+
+result = {}
+for word in words:
+    length = len(word)
+    result.setdefault(length, []).append(word)
+
+print(result)
+
+# 🧠 🔟 Find Common Keys in Two Dictionaries
+d1 = {"a":1, "b":2, "c":3}
+d2 = {"b":4, "c":5, "d":6}
+
+common = d1.keys() & d2.keys()
+print(common)
+
+
+# 🚀 PART 2: Scenario-Based Interview Questions :-
+
+# 🎯 Scenario 1: Student Marks System :-
+"""
+Question:
+You are given student names and marks.
+Find the average marks of each student.
+"""
+students = {
+    "Eshwar": [80, 90, 85],
+    "Ravi": [70, 75, 72]
+}
+
+for name, marks in students.items():
+    avg = sum(marks) / len(marks)
+    print(name, avg)
+
+
+# 🎯 Scenario 2: Inventory Management :-
+"""
+Question:
+Add product quantity if product already exists.
+"""
+inventory = {"apple": 10, "banana": 5}
+
+product = "apple"
+quantity = 3
+
+inventory[product] = inventory.get(product, 0) + quantity
+
+print(inventory)
+
+
+# 🎯 Scenario 3: API Response Processing :-
+"""
+Question:
+You get user data from API. Extract only required fields.
+"""
+user = {
+    "id": 101,
+    "name": "Eshwar",
+    "email": "test@gmail.com",
+    "password": "12345"
+}
+
+filtered = {k: user[k] for k in ("id", "name", "email")}
+print(filtered)
+
+# 🎯 Scenario 4: Count Votes (Election Problem) :-
+votes = ["A", "B", "A", "C", "B", "A"]
+
+result = {}
+for vote in votes:
+    result[vote] = result.get(vote, 0) + 1
+
+winner = max(result, key=result.get)
+print("Winner:", winner)
+
+
+# 🎯 Scenario 6: Nested JSON Processing
+data = {
+    "users": [
+        {"name": "Eshwar", "age": 22},
+        {"name": "Ravi", "age": 25}
+    ]
+}
+
+for user in data["users"]:
+    print(user["name"])
+
+
+
+
+
+
+
+
+
+
