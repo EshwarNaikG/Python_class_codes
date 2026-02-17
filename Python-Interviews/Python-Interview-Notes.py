@@ -5,7 +5,7 @@
 and readability.
 => Developed by Guide van russam in 1991.
 """
-
+#-----------------------------------------------------------------------------------------------------
 # What are the features of Python?
 """
 Simple syntax and Easy to learn
@@ -21,12 +21,16 @@ Platform independent
 Large standard library
 
 """
+#-----------------------------------------------------------------------------------------------------
 # Is Python compiled or interpreted?
 """Python is an interpreted language (internally compiled to bytecode).
 Code executes line by line. """
 
+#-----------------------------------------------------------------------------------------------------
+
 # What is PEP 8?
 """PEP 8 is Python’s official coding style guide."""
+#-----------------------------------------------------------------------------------------------------
 
 # What is comments in python ?
 """
@@ -56,11 +60,14 @@ Comments are ignored by the interpreter and are only visible in the code.
 
 3. Documentation :- Comments can save as documentation for our code.
 """
+#-----------------------------------------------------------------------------------------------------
 
 # What is indentation in Python?
 """Indentation defines code blocks. Python uses indentation instead of braces {}"""
 # OR 
 """ In python indentation is used to define blocks of code. Python uses indentation instead of {} braces """
+
+#-----------------------------------------------------------------------------------------------------
 
 # What is type casting?
 """Type casting is converting one data type into another data type."""
@@ -73,8 +80,11 @@ n2 = int(input("Enter second number : "))  # converting string into integer#
 
 # Note:-  User input values always return in string.
 
+#-----------------------------------------------------------------------------------------------------
+
 # What is None in Python?
 """None represents the absence of a value."""
+#-----------------------------------------------------------------------------------------------------
 
 # What is a keyword in Python? 
 """Keywords are the reserved words in python."""
@@ -94,12 +104,14 @@ print(keyword.kwlist)
 name = "Eshwar"
 print(name)
 print(type(name))
+#-----------------------------------------------------------------------------------------------------
 
 # What is global and local variable?
 """
 1. Global variable is accessible everywhere
 2. local variable is accessible only inside a function or block.
 """
+
 # Example:- GLOBAL VARIABLE..............................
 x = 10   # global variable
 
@@ -117,6 +129,7 @@ def display():
 display()
 # print(y)  ❌ Error
 
+#-----------------------------------------------------------------------------------------------------
 
 # What is type() function ?
 """The type() function is used to find the data type of a variable or value."""
@@ -133,8 +146,10 @@ print(type(name))
 # What is data type in python ?
 """Data type represents the different kinds of values that we stored on the variable"""
 
+#-----------------------------------------------------------------------------------------------------
+
 # Why called python is a dynamically typed  language ?
-"""No need to specify the data type explicitly, 
+"""Because No need to specify the data type explicitly, 
 based on the values type python allocated automatically at the run time"""
 
 x = 10      # int
@@ -154,6 +169,8 @@ y = "Hi"    # str
 9. Set
 10. Dictionary (dict)
 """
+#-----------------------------------------------------------------------------------------------------
+
 # What are the built-in data types in Python?
 """
 Python has the following built-in data types:
@@ -170,6 +187,8 @@ Mapping → dict
 
 Boolean → bool
 """
+
+#-----------------------------------------------------------------------------------------------------
 
 # What is the difference between mutable and immutable data types?
 """
@@ -188,13 +207,19 @@ lst.append(3)
 s = "Hi"
 # s[0] = "h" ❌
 
+#-----------------------------------------------------------------------------------------------------
+
 # What is an int data type?
 """Used to store whole numbers."""
 x = 100
 
+#-----------------------------------------------------------------------------------------------------
+
 # What is a float data type?
 """Stores decimal values."""
 price = 99.99
+
+#-----------------------------------------------------------------------------------------------------
 
 # What is a string (str)?
 """A string is an immutable sequence of characters enclosed in single quotes, double quotes, 
@@ -202,6 +227,7 @@ or triple quotes."""
 # Example
 name = "Python"
 
+#-----------------------------------------------------------------------------------------------------
 # What is Type casting in Python ?
 """Type casting is the manual conversion of one data type into another data type
  using Python’s built-in functions."""
@@ -245,6 +271,7 @@ n2 = int(input("Enter second number : "))  # converting string into integer#
 # What is operator in python ?
 """An operator is a symbol that performs a certain operation between operands."""
 
+#-----------------------------------------------------------------------------------------------------
 # Types of Operators
 """
 1. Arithmetic Operators (+, -, *, /, %, **, //)
@@ -252,6 +279,7 @@ n2 = int(input("Enter second number : "))  # converting string into integer#
 3. Assignment Operators (=, +=, -=, *=, /=, %=, **=)
 4. Logical Operators (and, or , not)
 """
+#-----------------------------------------------------------------------------------------------------
 # Arithmetic Operators
 
 # examples
@@ -267,7 +295,7 @@ print(f"Exponention : {a**b}")   # Exponention operator
 print(f"Floor Division : {a//b}") # FloorDivision operator
 print(f"Remainder : {a % b}")     # Remainder
 
-#....................................
+#-----------------------------------------------------------------------------------------------------
 # Relational / Comparision operator
 a = 50
 b = 20
@@ -279,7 +307,7 @@ print(a < b)  # False
 print(a >= b) # True
 print(a <= b) # False
 
-#........................................
+#-----------------------------------------------------------------------------------------------------
 # Assignment Operator
 num = 10
 print(num)
@@ -302,7 +330,7 @@ print(num)
 
 num **= 2
 print(num)
-#.....................................
+#-----------------------------------------------------------------------------------------------------
 # Logical Operators
 
 # NOT Operator
@@ -340,6 +368,7 @@ or triple quotes (''' ''' / """ """)."""
 
 # Example 
 name = "Eshwar"
+ #-----------------------------------------------------------------------------------------------------
 
 # Key Interview Points to Remember
 """
@@ -352,12 +381,15 @@ name = "Eshwar"
 4. Written using ' ', " ", or """ """
 """
 
+#-----------------------------------------------------------------------------------------------------
+
 # Are strings mutable or immutable in Python?
 """Strings are immutable, because their values cannot be changed after creation."""
 # Example
 s = "hello"
 # s[0] = 'H' ❌ Error
 
+#-----------------------------------------------------------------------------------------------------
 
 # How do you access characters in a string?
 """Using indexing."""
@@ -367,6 +399,8 @@ s = "Python"
 print(s[0]) # P
 print(s[-1]) # n
 
+#-----------------------------------------------------------------------------------------------------
+
 # What is string slicing?
 """Slicing is used to extract a part of a string."""
 
@@ -375,6 +409,8 @@ print(s[-1]) # n
 # Example
 s = "Python"
 print(s[1:4])
+
+#-----------------------------------------------------------------------------------------------------
 
 # What is the difference between == and is for strings?
 """
@@ -388,12 +424,16 @@ b = "hi"
 print(a == b) # True
 print(a is b) # May be True or False
 
+#-----------------------------------------------------------------------------------------------------
+
 # How do you find the length of a string?
 """Using len() function."""
 
 # Example
 s = "Python"
 print(len(s))
+
+#-----------------------------------------------------------------------------------------------------
 
 # What is string concatenation?
 """Joining two or more strings using +."""
@@ -402,6 +442,7 @@ print(len(s))
 a = "Hello"
 b = "World"
 print(a + " " + b)
+#-----------------------------------------------------------------------------------------------------
 
 # How do you repeat a string?
 """Using * operator."""
@@ -409,6 +450,7 @@ print(a + " " + b)
 # Example
 s = "Hi"
 print(s * 3)
+#-----------------------------------------------------------------------------------------------------
 
 # What are common string methods in Python?
 """
@@ -420,6 +462,7 @@ print(s * 3)
     split()	        Splits string
     find()	        Finds substring
 """
+#-----------------------------------------------------------------------------------------------------
 
 # Difference between find() and index()?
 """
@@ -431,6 +474,7 @@ print(s * 3)
 s = "python"
 print(s.find('z')) # -1
 # print(s.index('z')) ❌ Error
+#-----------------------------------------------------------------------------------------------------
 
 # What is split() method?
 """Splits a string into a list."""
@@ -439,13 +483,14 @@ print(s.find('z')) # -1
 s = "Python is easy"
 print(s.split())
 
-
+#-----------------------------------------------------------------------------------------------------
 # What is join() method?
 """Joins elements of a list into a string."""
 
 # Example
 words = ['Python', 'is', 'easy']
 print(" ".join(words))
+#-----------------------------------------------------------------------------------------------------
 
 # What is string formatting?
 """Used to insert values into strings."""
@@ -455,18 +500,22 @@ print(" ".join(words))
 name = "Eshwar"
 age = 22
 print(f"My name is {name} and age is {age}")
+#-----------------------------------------------------------------------------------------------------
 
 # How do you reverse a string?
 s = "Python"
 print(s[::-1])
+#-----------------------------------------------------------------------------------------------------
 
 # How do you check if a string is palindrome?
 s = "madam"
 print(s == s[::-1])
+#-----------------------------------------------------------------------------------------------------
 
 # How do you count occurrences of a character?
 s = "banana"
 print(s.count('a'))
+#-----------------------------------------------------------------------------------------------------
 
 # What is strip(), lstrip(), rstrip()?
 """Removes spaces from string."""
@@ -474,11 +523,13 @@ s = " hello "
 print(s.strip())
 print(s.lstrip())
 print(s.rstrip())
+#-----------------------------------------------------------------------------------------------------
 
 # How to check string type (numeric, alpha)?
 s = "123"
 print(s.isdigit())
 print(s.isalpha())
+#-----------------------------------------------------------------------------------------------------
 
 # What are escape characters?
 """Special characters starting with \.
@@ -490,6 +541,7 @@ Examples:
 """
 
 print("Hello\nWorld")
+#-----------------------------------------------------------------------------------------------------
 
 # Is empty string allowed in Python?
 """Yes"""
@@ -518,6 +570,7 @@ elif (condition):
 else:
     statement3
 """
+#-----------------------------------------------------------------------------------------------------
 
 # Why are conditional statements used?
 """
@@ -527,6 +580,7 @@ else:
 
 3. To execute code only when a condition is satisfied
 """
+#-----------------------------------------------------------------------------------------------------
 
 # Types of Conditional Statements in Python
 # 1. if Statement
